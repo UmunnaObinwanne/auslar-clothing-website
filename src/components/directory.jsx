@@ -1,4 +1,4 @@
-import "../index.css";
+import "../index.scss";
 import Category from "./category";
 
 export default function Directory() {
