@@ -7,10 +7,14 @@ const buttonTypeClasses = {
 
 export default function Button({ children, buttonType, ...otherProps }) {
   return (
-    <button
-      className={`button-container ${buttonTypeClasses[buttonType]}`}
-      {...otherProps}>
-      {children}
-    </button>
+    <div className="auth-container">
+      <div className="sign-in-container">
+        <button
+          className={`button-container ${buttonTypeClasses[buttonType]}`}
+          {...otherProps}>
+          {children}
+        </button>
+      </div>
+    </div>
   );
 }

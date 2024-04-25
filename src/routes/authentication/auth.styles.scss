@@ -1,0 +1,112 @@
+.auth-container {
+    display: flex;
+    justify-content: space-around; // Ensures the containers are spaced evenly
+    margin: 30px auto;
+    flex-wrap: wrap;
+}
+
+.specific {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.sign-in-container h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.sign-in-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in-container form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sign-in-container form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.sign-in-container form button[type="submit"],
+.sign-in-container form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sign-in-container form button[type="submit"]:hover,
+.sign-in-container form button:hover {
+    background-color: #0056b3;
+}
+
+.sign-up-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sign-up-container h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.sign-up-container span {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sign-up-container form {
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.sign-up-container form label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.sign-up-container form input {
+    padding: 2px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.sign-up-container form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.sign-up-container form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
