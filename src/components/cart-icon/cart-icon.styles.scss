@@ -1,0 +1,38 @@
+.cart-icon-container {
+    margin-top: 5px;
+    width: 60px;
+    /* Increase width */
+    height: 60px;
+    /* Increase height */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .shopping-icon {
+        width: 40%;
+        /* Make the icon fill the container */
+        height: 40%;
+        /* Make the icon fill the container */
+    }
+
+    .item-count {
+        position: absolute;
+        font-size: 10px;
+        /* Increase font size */
+        font-weight: bold;
+        bottom: 5px;
+        /* Adjust position */
+        right: 5px;
+        /* Adjust position */
+        color: white;
+        /* Ensure visibility on top of the icon */
+        background-color: red;
+        /* Add background color */
+        border-radius: 50%;
+        /* Make it circular */
+        padding: 5px;
+        /* Add padding */
+    }
+}

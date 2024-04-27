@@ -16,17 +16,13 @@ export default function SignIn() {
   const [error, setError] = useState(null);
 
   const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup();
-    const userDocRef = await createUserDocumentFromAuth(user);
+    await signInWithGooglePopup();
   };
 
   const handleSignIn = async (event) => {
     event.preventDefault();
     try {
-      const response = await signInWithEmailAndPassword(auth, email, password);
-      // User signed in successfully
-      console.log(response);
-
+      const { user } = await signInWithEmailAndPassword(auth, email, password);
       // You can redirect or do anything else you want here
     } catch (error) {
       setError(error.message);
@@ -35,8 +31,6 @@ export default function SignIn() {
       }
     }
   };
-
-  console.log(error);
 
   return (
     <div className="auth-container">
