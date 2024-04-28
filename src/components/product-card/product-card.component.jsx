@@ -5,9 +5,16 @@ import CardContent from "@mui/joy/CardContent";
 import IconButton from "@mui/joy/IconButton";
 import Typography from "@mui/joy/Typography";
 import "./product.styles.scss";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/dropdown.context";
 
 export default function ProductCard({ product }) {
   const { name, price, imageUrl } = product;
+
+  const { addItemToCart } = useContext(CartContext);
+
+  const addProductToCart = () => addItemToCart(product);
+
   return (
     <Card sx={{ width: 320 }} className="product-card-container">
       <div>
@@ -34,6 +41,7 @@ export default function ProductCard({ product }) {
           </Typography>
         </div>
         <Button
+          onClick={addProductToCart}
           variant="solid"
           size="md"
           color="primary"
