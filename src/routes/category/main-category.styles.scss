@@ -1,0 +1,16 @@
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+    row-gap: 50px;
+}
+
+.single-category-title {
+    grid-column: 1 / -1;
+    /* Span all columns */
+}
+
+.product-grid {
+    grid-column: 1 / -1;
+    /* Span all columns */
+}

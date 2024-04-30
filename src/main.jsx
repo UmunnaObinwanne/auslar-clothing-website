@@ -9,17 +9,17 @@ import { DropdownProvider } from "./contexts/dropdown.context.jsx";
 
 import "./index.scss";
 
-import { ProductsProvider } from "./contexts/product.context.jsx";
+import { CategoriesProvider } from "./contexts/categories.context.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <UserProvider>
-        <ProductsProvider>
+        <CategoriesProvider>
           <DropdownProvider>
             <App />
           </DropdownProvider>
-        </ProductsProvider>
+        </CategoriesProvider>
       </UserProvider>
     </BrowserRouter>
   </React.StrictMode>
